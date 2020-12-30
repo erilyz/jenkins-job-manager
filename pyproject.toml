@@ -22,6 +22,10 @@ pytest = "^6.0.1"
 line-length = 88
 target-version = ['py36']
 
+[tool.pytest.ini_options]
+addopts = ["-q", "--junitxml=testresults.xml", "-nauto", "--cov", "jenkins_job_manager", "--cov-report", "html", "--cov-report", "term:skip-covered"]
+norecursedirs = [".venv"]
+
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
