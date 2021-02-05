@@ -344,9 +344,9 @@ class JenkinsJobManager:
                         dl = dl + line
                     xml_data = dict(
                         name=item.name,
-                        before_xml=item.before_xml,
-                        after_xml=item.after_xml,
-                        difflines=dl,
+                        # before_xml=item.before_xml,
+                        # after_xml=item.after_xml,
+                        # difflines=dl,
                         metadata=md,
                         changetype=item.changetype()
                     )
